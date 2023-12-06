@@ -5,7 +5,8 @@
 import pyautogui
 #import os
 from pynput import *
-
+import time
+import random
 
                                   
 '''                                 #the following is used for cursor troubleshooting
@@ -32,6 +33,7 @@ def allFunc(): #plays all the functions in 40 sec intervals
         finalFunc()
         collectFunc()
         nextFunc()
+        time.sleep(random.randint(15, 30)) #should create a random time where it waits
         allFunc() #creates an infinite loop to have it automated
         
 def playButFunc():
